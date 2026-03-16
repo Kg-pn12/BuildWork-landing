@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BuildWork | Design & Construction Marketplace</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'DM Sans', system-ui, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(160deg, #0f1f35 0%, #1E3A5F 50%, #2d5a8a 100%);
+      color: white;
+      padding: 2rem;
+      overflow: hidden;
+    }
+    body::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: 
+        radial-gradient(ellipse 80% 50% at 50% 0%, rgba(255,107,53,0.15) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(255,179,0,0.08) 0%, transparent 40%);
+      pointer-events: none;
+    }
+    .content { position: relative; z-index: 1; text-align: center; max-width: 480px; width: 100%; display: flex; flex-direction: column; align-items: center; }
+    .logo { display: flex; align-items: center; justify-content: center; gap: 0.5rem; margin-bottom: 1rem; }
+    .logo-icon { color: #FF6B35; font-size: 1.75rem; }
+    .logo-text { font-family: 'Syne', sans-serif; font-weight: 800; font-size: 1.75rem; letter-spacing: -0.02em; }
+    h1 { font-family: 'Syne', sans-serif; font-weight: 700; font-size: 1.5rem; margin-bottom: 0.5rem; letter-spacing: -0.01em; }
+    p { font-size: 0.95rem; opacity: 0.85; margin-bottom: 2rem; line-height: 1.6; }
+    .links { display: flex; flex-direction: column; gap: 1rem; width: 100%; max-width: 320px; margin: 0 auto; }
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1.25rem 1.5rem;
+      background: rgba(255,255,255,0.08);
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,0.12);
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      backdrop-filter: blur(10px);
+    }
+    a:hover {
+      background: rgba(255,255,255,0.14);
+      border-color: rgba(255,107,53,0.5);
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+    }
+    a .btn-title { display: block; font-weight: 700; }
+    .main-link { border-left: 3px solid #FF6B35; }
+    .rush-link { border-left: 3px solid #FFB300; }
+    .label { display: block; font-size: 0.8rem; opacity: 0.7; font-weight: 500; margin-top: 0.35rem; }
+  </style>
+</head>
+<body>
+  <div class="content">
+    <div class="logo">
+      <span class="logo-icon">◇</span>
+      <span class="logo-text">BuildWork</span>
+    </div>
+    <h1>Choose your experience</h1>
+    <p>Two ways we're transforming how construction and design professionals connect with work.</p>
+    <div class="links">
+      <a href="buildwork-landing/index.html" class="main-link">
+        <span class="btn-title">Main Marketplace</span>
+        <span class="label">Projects, jobs & full ecosystem</span>
+      </a>
+      <a href="buildwork-rush-landing/index.html" class="rush-link">
+        <span class="btn-title">BuildWork Rush</span>
+        <span class="label">Same-day trades on demand</span>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
